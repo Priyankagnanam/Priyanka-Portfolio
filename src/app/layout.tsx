@@ -30,7 +30,6 @@ export const metadata: Metadata = {
     "AI Computer Vision",
     "Face Recognition",
     "Cybersecurity",
-    "Full-Stack Developer",
     "Portfolio",
     "React",
     "Next.js",
@@ -53,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
       title: "Priyanka G | B.Tech IT Student and AI Developer",
       description:
-        "Portfolio of Priyanka G — AI Engineer, Full-Stack Developer, and NPTEL Elite Scholar.",
+        "Portfolio of Priyanka G — AI and computer vision student with cybersecurity experience.",
   },
   robots: {
     index: true,

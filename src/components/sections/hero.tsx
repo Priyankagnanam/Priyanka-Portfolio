@@ -23,10 +23,10 @@ function LinkedinIcon({ className }: { className?: string }) {
 }
 
 const statsData = [
-  { value: "8.39", label: "CGPA", sub: "B.Tech IT" },
+  { value: "8.57", label: "CGPA", sub: "B.Tech IT" },
   { value: "93%", label: "NPTEL HCI", sub: "Elite Score" },
   { value: "2", label: "Internships", sub: "Industry" },
-  { value: "3+", label: "Projects", sub: "AI & Cloud" },
+  { value: "2", label: "Projects", sub: "Academic" },
 ]
 
 export default function Hero() {
@@ -124,7 +124,7 @@ export default function Hero() {
             <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-primary/30 bg-primary/10 backdrop-blur-sm">
               <GraduationCap className="h-4 w-4 text-primary" />
               <span className="text-sm text-primary font-semibold tracking-wide">
-                🎓 AI & Full-Stack Developer
+                🎓 AI & Computer Vision Student
               </span>
               <Star className="h-3.5 w-3.5 text-yellow-400 fill-yellow-400" />
             </div>

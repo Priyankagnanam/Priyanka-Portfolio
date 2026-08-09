@@ -7,7 +7,7 @@ import Reveal from "@/components/effects/reveal"
 import { personalInfo } from "@/data/personal"
 
 const highlights = [
-  { label: "CGPA", value: "8.39 / 10.0", icon: "⭐" },
+  { label: "CGPA", value: "8.57 / 10.0", icon: "⭐" },
   { label: "NPTEL HCI", value: "93% Elite", icon: "🏆" },
   { label: "Internships", value: "2 Industry", icon: "💼" },
   { label: "Focus", value: "AI, Cloud & Security", icon: "🎯" },

@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Award, Star, Calendar, BookOpen } from "lucide-react"
+import { Award, Star, Calendar, BookOpen, ExternalLink } from "lucide-react"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Reveal from "@/components/effects/reveal"
@@ -77,6 +77,15 @@ export default function Certifications() {
                         {cert.year}
                       </span>
                     </div>
+                    <a
+                      href={cert.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-3 inline-flex items-center gap-1.5 text-xs font-medium text-primary hover:underline"
+                    >
+                      View Credentials
+                      <ExternalLink className="h-3.5 w-3.5" />
+                    </a>
                   </CardContent>
                 </Card>
               </motion.div>

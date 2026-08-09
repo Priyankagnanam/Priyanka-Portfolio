@@ -1,7 +1,7 @@
 export const personalInfo = {
   name: "Priyanka G",
   role: "B.Tech Information Technology Student",
-  tagline: "AI & Computer Vision | Full-Stack Development | Cybersecurity",
+  tagline: "AI & Computer Vision | Cybersecurity",
   email: "gpriyanka17052006@gmail.com",
   phone: "+91 82487 37651",
   location: "Dharmapuri, Tamil Nadu, India",
@@ -10,7 +10,6 @@ export const personalInfo = {
   resumeUrl: "/resume.pdf",
   typingTexts: [
     "AI & Computer Vision Engineer",
-    "Full-Stack Developer",
     "Cybersecurity Enthusiast",
     "NPTEL 93% HCI Scholar",
   ],
@@ -18,7 +17,7 @@ export const personalInfo = {
 
 export const aboutContent = {
   intro:
-    "I am a B.Tech Information Technology student at Government College of Engineering, Erode (Anna University) maintaining an 8.39 CGPA. My interests span Biometric Computer Vision, Intelligent Systems, and Secure Cloud Architectures.",
+    "I am a B.Tech Information Technology student at Government College of Engineering, Erode (Anna University) maintaining an 8.57 CGPA. My interests span Biometric Computer Vision, Intelligent Systems, and Secure Cloud Architectures.",
   passion:
     "From building real-time facial recognition attendance systems with OpenCV to designing cloud-connected student portals using Firebase, I enjoy applying technology to practical problems.",
   goals:
@@ -26,14 +25,14 @@ export const aboutContent = {
   details: [
     {
       label: "Academic Standing",
-      value: "8.39 CGPA in B.Tech IT — Top of cohort with elite NPTEL certifications (93% HCI).",
+      value: "8.57 CGPA in B.Tech IT — with elite NPTEL certifications (93% HCI).",
     },
     {
       label: "Computer Vision & AI",
       value: "Built a real-time face recognition attendance system using OpenCV and Flask.",
     },
     {
-      label: "Cloud & Full-Stack",
+      label: "Cloud Applications",
       value: "Built Firebase-powered apps with real-time Firestore sync, OAuth authentication, and responsive dashboards.",
     },
     {
@@ -75,7 +74,7 @@ export const education = [
     institution: "Government College of Engineering, Erode",
     affiliation: "Anna University, Chennai",
     degree: "B.Tech Information Technology",
-    cgpa: "8.39 / 10.0",
+    cgpa: "8.57 / 10.0",
     year: "2023 – Expected May 2027",
     location: "Erode, Tamil Nadu",
     description:
@@ -135,7 +134,7 @@ export const projects = [
     ],
     challenges:
       "Tuned detection thresholds and preprocessing steps across varied lighting conditions.",
-    github: "https://github.com/Priyankagnanam/SmartFaceRecognitionAttendance",
+    github: "https://github.com/Priyankagnanam/smart-face-recognition-attendance-system",
     live: "",
     image: "/images/smart_face_attendance.jpg",
     category: "AI & Computer Vision",
@@ -156,7 +155,7 @@ export const projects = [
       "Designing the data structure for student management workflows.",
     impact:
       "Centralized academic management and communication for students and administration.",
-    github: "https://github.com/Priyankagnanam",
+    github: "https://github.com/Priyankagnanam/college_connect_web_portal",
     live: "",
     image: "/images/college_connect_portal.jpg",
     category: "Web & Cloud Systems",
@@ -169,6 +168,7 @@ export const certifications = [
     issuer: "NPTEL Elite",
     score: "93% — Top Performer",
     year: "Jan – Apr 2026",
+    url: "https://drive.google.com/file/d/1SqWNFkYrNARAktyck2ZcNUhO9V-v3vjE/view?usp=sharing",
     description:
       "Elite distinction for mastering user-centered design, cognitive modeling, usability heuristics, and interface evaluation methodologies.",
     highlight: true,
@@ -179,6 +179,7 @@ export const certifications = [
     issuer: "NPTEL Elite",
     score: "80%",
     year: "2025",
+    url: "https://drive.google.com/file/d/1yFXoZYMphLYEIgxvKE1nhWsu64Z8sT4M/view?usp=sharing",
     description:
       "Elite certification in cyber-physical systems, smart sensors, industrial communication protocols, and cloud IoT architecture.",
     highlight: true,
@@ -189,6 +190,7 @@ export const certifications = [
     issuer: "Infosys Springboard",
     score: "Verified",
     year: "2025",
+    url: "https://drive.google.com/file/d/1c-hUPakIwxAi3ObH2aos7It8oNclDFBO/view?usp=sharing",
     description:
       "Certification in OOP principles, exception handling, data structures, and multi-threading in Java.",
     highlight: false,
@@ -199,6 +201,7 @@ export const certifications = [
     issuer: "Udemy",
     score: "Verified",
     year: "2026",
+    url: "https://drive.google.com/file/d/1MPyu94zHAjpbhTqDLQhZ9sYmTCoe36eQ/view?usp=sharing",
     description:
       "Comprehensive Python 3 certification covering functional programming, data manipulation, and backend automation.",
     highlight: false,
@@ -209,9 +212,9 @@ export const certifications = [
 export const achievements = [
   {
     icon: "graduation-cap",
-    title: "8.39 CGPA Academic Excellence",
+    title: "8.57 CGPA Academic Standing",
     description: "Maintaining top-tier CGPA in B.Tech IT at Government College of Engineering, Erode — Anna University.",
-    stat: "8.39",
+    stat: "8.57",
     statLabel: "CGPA",
   },
   {

@@ -63,7 +63,7 @@ export default function About() {
                 {[
                   { label: "Location", value: "Tamil Nadu, India", icon: "📍" },
                   { label: "Degree", value: "B.Tech IT (2027)", icon: "🎓" },
-                  { label: "CGPA", value: "8.39 / 10.0", icon: "⭐" },
+                  { label: "CGPA", value: "8.57 / 10.0", icon: "⭐" },
                   { label: "Focus", value: "AI, Cloud & Security", icon: "🎯" },
                 ].map((info) => (
                   <div key={info.label} className="flex items-center gap-2.5 p-3 rounded-xl bg-card/50 border border-border/50">

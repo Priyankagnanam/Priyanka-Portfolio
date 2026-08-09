@@ -44,9 +44,9 @@ export interface Education {
 export const PORTFOLIO_DATA = {
   personal: {
     name: 'Priyanka G',
-    shortTitle: 'B.Tech IT Scholar | AI & Full-Stack Developer',
+     shortTitle: 'B.Tech IT Scholar | AI & Computer Vision',
     headline: 'Engineering Intelligent Systems, Computer Vision & Secure Web Applications',
-    bio: 'B.Tech student in Information Technology at Government College of Engineering, Erode (Anna University) with an 8.39 CGPA. Focused on Artificial Intelligence, Biometric Computer Vision, and Network Cybersecurity.',
+     bio: 'B.Tech student in Information Technology at Government College of Engineering, Erode (Anna University) with an 8.57 CGPA. Focused on Artificial Intelligence, Biometric Computer Vision, and Network Cybersecurity.',
     email: 'gpriyanka17052006@gmail.com',
     phone: '+91 8248737651',
     location: 'Dharmapuri, Tamil Nadu, India',
@@ -57,7 +57,7 @@ export const PORTFOLIO_DATA = {
   },
 
   stats: [
-    { label: 'Cumulative CGPA', value: '8.39', sub: 'Top Tier Academic Standing' },
+    { label: 'Cumulative CGPA', value: '8.57', sub: 'Academic Standing' },
     { label: 'NPTEL HCI Score', value: '93%', sub: 'Elite Certification Distinction' },
     { label: 'Engineering Internships', value: '02', sub: 'AI & Cybersecurity Focus' },
     { label: 'Academic Projects', value: '02', sub: 'Computer Vision & Full-Stack' },
@@ -70,7 +70,7 @@ export const PORTFOLIO_DATA = {
       institution: 'Government College of Engineering, Erode',
       affiliation: 'Anna University, Chennai',
       period: '2023 – Expected May 2027',
-      grade: '8.39 / 10.0',
+       grade: '8.57 / 10.0',
       gradeLabel: 'CGPA',
       coursework: [
         'Data Structures & Algorithms',
@@ -133,7 +133,7 @@ export const PORTFOLIO_DATA = {
          'Flask backend integration',
          'SQLite attendance data storage'
       ],
-      githubUrl: 'https://github.com/Priyankagnanam/Priyanka-Portfolio'
+       githubUrl: 'https://github.com/Priyankagnanam/smart-face-recognition-attendance-system'
     },
     {
       id: 'college-connect',
@@ -149,7 +149,7 @@ export const PORTFOLIO_DATA = {
          'Attendance, marks, and study materials management',
          'Leave requests and announcements'
       ],
-      githubUrl: 'https://github.com/Priyankagnanam/Priyanka-Portfolio'
+       githubUrl: 'https://github.com/Priyankagnanam/college_connect_web_portal'
     },
   ] as Project[],
 
