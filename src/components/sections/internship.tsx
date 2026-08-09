@@ -24,7 +24,7 @@ export default function Internship() {
               Industry <span className="text-gradient">Internships</span>
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto text-sm md:text-base">
-              Hands-on experience in AI & Data Science and Cybersecurity — translating academic knowledge into industry-grade solutions.
+              Hands-on experience in AI & Data Science and Cybersecurity — translating academic knowledge into practical project work.
             </p>
             <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto mt-4" />
           </div>

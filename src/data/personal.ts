@@ -1,7 +1,7 @@
 export const personalInfo = {
   name: "Priyanka G",
   role: "B.Tech Information Technology Student",
-  tagline: "AI & Computer Vision Researcher | Full-Stack Developer | Cybersecurity Enthusiast",
+  tagline: "AI & Computer Vision | Full-Stack Development | Cybersecurity",
   email: "gpriyanka17052006@gmail.com",
   phone: "+91 82487 37651",
   location: "Dharmapuri, Tamil Nadu, India",
@@ -20,7 +20,7 @@ export const aboutContent = {
   intro:
     "I am a B.Tech Information Technology student at Government College of Engineering, Erode (Anna University) maintaining an 8.39 CGPA. My interests span Biometric Computer Vision, Intelligent Systems, and Secure Cloud Architectures.",
   passion:
-    "From building real-time facial recognition attendance systems with InsightFace & OpenCV, to designing cloud-connected student portals using Firebase — I thrive where AI meets practical engineering.",
+    "From building real-time facial recognition attendance systems with OpenCV to designing cloud-connected student portals using Firebase, I enjoy applying technology to practical problems.",
   goals:
     "My goal is to engineer scalable, intelligent systems that solve real societal problems — inspired by India's growing innovation ecosystem.",
   details: [
@@ -30,7 +30,7 @@ export const aboutContent = {
     },
     {
       label: "Computer Vision & AI",
-      value: "Engineered a real-time face recognition attendance system using InsightFace, OpenCV, and Flask.",
+      value: "Built a real-time face recognition attendance system using OpenCV and Flask.",
     },
     {
       label: "Cloud & Full-Stack",
@@ -38,7 +38,7 @@ export const aboutContent = {
     },
     {
       label: "Cybersecurity",
-      value: "Industry intern at Xplore IT Corp — conducted vulnerability assessments, threat modelling & pen-testing.",
+      value: "Performed network vulnerability scans and assisted in identifying and documenting security gaps across test environments.",
     },
     {
       label: "Research Focus",
@@ -49,28 +49,16 @@ export const aboutContent = {
 
 export const skills = {
   frontend: [
-    { name: "HTML5 & CSS3", level: 95 },
-    { name: "JavaScript (ES6+)", level: 88 },
-    { name: "React & Vite", level: 85 },
-    { name: "Tailwind CSS", level: 90 },
+    "HTML5 & CSS3", "JavaScript",
   ],
   backend: [
-    { name: "Python", level: 92 },
-    { name: "Java", level: 85 },
-    { name: "Flask", level: 82 },
-    { name: "SQL", level: 88 },
+    "Python", "Java", "SQL",
   ],
   database: [
-    { name: "MySQL", level: 86 },
-    { name: "Firebase Firestore", level: 88 },
-    { name: "MongoDB", level: 80 },
-    { name: "SQLite", level: 85 },
+    "MySQL", "MongoDB", "Firebase Firestore",
   ],
   tools: [
-    { name: "Git & GitHub", level: 90 },
-    { name: "OpenCV & InsightFace", level: 85 },
-    { name: "Power BI & Excel", level: 84 },
-    { name: "Linux (Ubuntu)", level: 85 },
+    "Git & GitHub", "Linux (Ubuntu)", "Visual Studio Code", "Excel", "Power BI",
   ],
   soft: [
     "Research & Analytical Thinking",
@@ -113,13 +101,10 @@ export const internship = [
     duration: "2026",
     location: "Coimbatore, India",
     highlights: [
-      "Architected a real-time Smart Face Recognition Attendance System using Python, Flask, OpenCV, and InsightFace embedding models.",
-      "Designed SQLite database schema for encrypted biometric data storage and automated student attendance logging.",
-      "Built an analytics dashboard with attendance trend visualizations, percentage calculations, and exportable PDF reports.",
-      "Applied machine learning classification techniques for facial feature alignment achieving high verification accuracy.",
-      "Implemented full-stack web interface with Flask REST APIs, JavaScript charts, and live camera stream integration.",
+      "Extended the facial recognition attendance system into a deployable internship project, applying Python and OpenCV in a professional development workflow.",
+      "Collaborated with mentors on debugging, testing, and documenting the AI pipeline for real-world reliability.",
     ],
-    tech: ["Python", "Flask", "OpenCV", "InsightFace", "SQLite", "JavaScript", "Data Analytics"],
+      tech: ["Python", "Flask", "OpenCV"],
     image: "/images/smart_face_attendance.jpg",
   },
   {
@@ -128,11 +113,8 @@ export const internship = [
     duration: "June 2025 – July 2025",
     location: "Coimbatore, India",
     highlights: [
-      "Collaborated with senior security engineers to identify and mitigate vulnerabilities in web applications using OWASP frameworks.",
-      "Conducted penetration testing and network vulnerability assessments, documenting findings and remediation strategies.",
-      "Performed packet analysis, port scanning, and threat modelling on simulated enterprise network environments.",
-      "Gained hands-on experience with encryption standards, secure session management, and incident response procedures.",
-      "Developed security documentation and best-practice guidelines promoting a security-first development culture.",
+      "Performed network vulnerability scans across test environments and assisted in identifying and documenting security gaps.",
+      "Learned and applied fundamentals of network security, including common attack vectors and basic system hardening practices.",
     ],
     tech: ["Network Security", "Vulnerability Scanning", "Linux", "Penetration Testing", "Threat Analysis", "Security Protocols"],
     image: "/images/cybersecurity_internship.jpg",
@@ -144,18 +126,15 @@ export const projects = [
     title: "Smart Face Recognition Attendance System",
     subtitle: "AI & Biometric Computer Vision",
     description:
-      "An end-to-end AI-powered biometric attendance system using facial recognition with real-time camera streaming, automated analytics reporting, and secure data management — built as part of my AI internship at TVK Technologies.",
-    tech: ["Python", "Flask", "OpenCV", "InsightFace", "SQLite", "HTML/CSS/JS"],
+      "A real-time facial recognition attendance system using OpenCV, Flask, and SQLite.",
+    tech: ["Python", "Flask", "OpenCV", "SQLite"],
     features: [
-      "Real-time biometric face detection with 128D feature vector matching",
-      "Automated attendance logging with timestamp & confidence scores",
-      "Secure multi-role admin & student web dashboard",
-      "PDF/CSV attendance report generation with analytics charts",
+      "OpenCV-based facial detection and recognition",
+      "Flask backend integration",
+      "SQLite attendance data storage",
     ],
     challenges:
-      "Optimizing InsightFace embedding pipeline for low-latency real-time performance on standard hardware.",
-    impact:
-      "Reduced manual attendance overhead by 90% with sub-second face verification accuracy.",
+      "Tuned detection thresholds and preprocessing steps across varied lighting conditions.",
     github: "https://github.com/Priyankagnanam/SmartFaceRecognitionAttendance",
     live: "",
     image: "/images/smart_face_attendance.jpg",
@@ -167,40 +146,19 @@ export const projects = [
     description:
       "A centralized full-stack academic portal bridging faculty-student communication with real-time Firebase Firestore, role-based access, announcement feeds, and academic record management.",
     tech: ["HTML5", "CSS3", "JavaScript", "Firebase Auth", "Firestore"],
-    features: [
-      "Firebase OAuth & email authentication with role-based access control",
-      "Real-time Firestore announcement and notification feed",
-      "Interactive academic timetable and assignment submission module",
-      "Mobile-first responsive glassmorphism design system",
-    ],
-    challenges:
-      "Designing a scalable Firestore data model for diverse multi-role user permissions.",
+      features: [
+        "Firebase Authentication for secure login",
+        "Real-time Firestore data updates",
+        "Attendance and marks management",
+        "Study materials, leave requests, and announcements",
+      ],
+      challenges:
+      "Designing the data structure for student management workflows.",
     impact:
-      "Streamlined campus communication serving as a centralized hub for 500+ students.",
+      "Centralized academic management and communication for students and administration.",
     github: "https://github.com/Priyankagnanam",
     live: "",
     image: "/images/college_connect_portal.jpg",
-    category: "Web & Cloud Systems",
-  },
-  {
-    title: "UserPro – User Profile Dashboard",
-    subtitle: "Cloud-Connected Profile Management",
-    description:
-      "A sleek, security-focused user profile management dashboard with Firebase Firestore real-time synchronization, dynamic avatar management, and granular privacy settings.",
-    tech: ["HTML5", "CSS3", "JavaScript", "Firebase Firestore", "Cloud Storage"],
-    features: [
-      "Real-time Firestore sync with zero-latency optimistic UI updates",
-      "Dynamic avatar upload, crop & preview with Cloud Storage",
-      "Granular user privacy settings and session activity logs",
-      "Firestore security rules enforcement for data access control",
-    ],
-    challenges:
-      "Implementing real-time sync across multiple sessions while maintaining consistent data integrity.",
-    impact:
-      "Delivered a production-grade profile system with enterprise-level security and polished UX.",
-    github: "https://github.com/Priyankagnanam",
-    live: "",
-    image: "/images/userpro_dashboard.jpg",
     category: "Web & Cloud Systems",
   },
 ]
@@ -272,9 +230,9 @@ export const achievements = [
   },
   {
     icon: "folder-git",
-    title: "3+ Production Projects",
-    description: "Built AI biometric systems, full-stack cloud portals and analytics dashboards in real deployments.",
-    stat: "3+",
+      title: "2 Academic Projects",
+      description: "Built a facial recognition attendance system and a full-stack student management portal.",
+      stat: "2",
     statLabel: "Projects",
   },
   {

@@ -31,7 +31,7 @@ export default function Projects() {
               Featured <span className="text-gradient">Work</span>
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto text-sm md:text-base">
-              Research-grade projects spanning AI biometrics, cloud-connected portals, and security systems — demonstrating end-to-end engineering capabilities.
+              Academic and internship projects spanning computer vision and cloud-connected portals.
             </p>
             <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto mt-4" />
           </div>

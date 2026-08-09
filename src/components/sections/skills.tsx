@@ -12,23 +12,11 @@ const categoryMeta = {
   tools: { icon: Wrench, label: "AI, Tools & DevOps", color: "from-primary to-blue-500", desc: "Dev tools, AI libraries & ops" },
 }
 
-function SkillBar({ name, level, index, color }: { name: string; level: number; index: number; color: string }) {
+function SkillTag({ name }: { name: string }) {
   return (
-    <div className="space-y-1.5">
-      <div className="flex justify-between items-center">
-        <span className="text-sm font-medium text-foreground/90">{name}</span>
-        <span className="text-xs text-muted-foreground font-mono">{level}%</span>
-      </div>
-      <div className="h-2 rounded-full bg-muted/60 overflow-hidden">
-        <motion.div
-          className={`h-full rounded-full bg-gradient-to-r ${color}`}
-          initial={{ width: 0 }}
-          whileInView={{ width: `${level}%` }}
-          transition={{ delay: index * 0.06, duration: 0.7, ease: "easeOut" }}
-          viewport={{ once: true }}
-        />
-      </div>
-    </div>
+    <span className="inline-flex px-3 py-2 rounded-xl border border-primary/20 bg-primary/5 text-sm font-medium text-foreground/80">
+      {name}
+    </span>
   )
 }
 
@@ -68,14 +56,11 @@ export default function Skills() {
                         <p className="text-xs text-muted-foreground">{meta.desc}</p>
                       </div>
                     </div>
-                    <div className="space-y-3.5">
-                      {skills[category].map((skill, idx) => (
-                        <SkillBar
-                          key={skill.name}
-                          name={skill.name}
-                          level={skill.level}
-                          index={idx}
-                          color={meta.color}
+                    <div className="flex flex-wrap gap-2.5">
+                      {skills[category].map((skill) => (
+                        <SkillTag
+                          key={skill}
+                          name={skill}
                         />
                       ))}
                     </div>

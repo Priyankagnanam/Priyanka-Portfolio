@@ -60,7 +60,7 @@ export const PORTFOLIO_DATA = {
     { label: 'Cumulative CGPA', value: '8.39', sub: 'Top Tier Academic Standing' },
     { label: 'NPTEL HCI Score', value: '93%', sub: 'Elite Certification Distinction' },
     { label: 'Engineering Internships', value: '02', sub: 'AI & Cybersecurity Focus' },
-    { label: 'Production Projects', value: '03+', sub: 'AI Biometrics & Full-Stack' },
+    { label: 'Academic Projects', value: '02', sub: 'Computer Vision & Full-Stack' },
   ],
 
 
@@ -98,13 +98,12 @@ export const PORTFOLIO_DATA = {
       company: 'TVK Technologies',
       location: 'Coimbatore, India',
       period: '2026',
-      summary: 'Architected an automated smart biometric face recognition attendance solution leveraging Python, OpenCV, and Flask.',
+       summary: 'Built a real-time facial recognition attendance system using Python, OpenCV, Flask, and SQLite.',
       bulletPoints: [
-        'Built real-time biometric face detection algorithms utilizing OpenCV and InsightFace embedding models.',
-        'Developed full-stack web user interface with Flask & SQLite for automated attendance logging and statistical report generation.',
-        'Applied machine learning classification & facial feature alignment techniques to achieve high verification accuracy.'
+         'Extended the system into a deployable internship project using Python and OpenCV.',
+         'Collaborated with mentors on debugging, testing, and documenting the AI pipeline.'
       ],
-      techUsed: ['Python', 'Flask', 'OpenCV', 'InsightFace', 'SQLite', 'Data Analytics']
+       techUsed: ['Python', 'Flask', 'OpenCV', 'SQLite']
     },
     {
       role: 'Cyber Security Intern',
@@ -112,12 +111,11 @@ export const PORTFOLIO_DATA = {
       location: 'Coimbatore, India',
       period: 'June 2025 – July 2025',
       summary: 'Executed network vulnerability assessments and threat analysis protocols for web applications.',
-      bulletPoints: [
-        'Completed comprehensive hands-on training in network packet analysis, port scanning, and OWASP vulnerability matrices.',
-        'Assessed security postures of sample web systems and drafted threat mitigation recommendations.',
-        'Mastered encryption standards, secure session management, and cyber threat identification strategies.'
-      ],
-      techUsed: ['Network Security', 'Vulnerability Scanning', 'Linux', 'Cyber Threat Analysis', 'Security Protocols']
+       bulletPoints: [
+         'Performed network vulnerability scans across test environments and assisted in identifying and documenting security gaps.',
+         'Learned and applied fundamentals of network security, including common attack vectors and basic system hardening practices.'
+       ],
+       techUsed: ['Network Security', 'Vulnerability Scanning', 'Linux', 'System Hardening']
     }
   ] as Internship[],
 
@@ -126,15 +124,14 @@ export const PORTFOLIO_DATA = {
       id: 'smart-face-recognition',
       title: 'Smart Face Recognition Attendance System',
       category: 'AI & Computer Vision',
-      description: 'An AI-powered biometric student attendance system built with Flask, OpenCV, and deep feature vector extraction for real-time tracking and automated reporting.',
-      longDescription: 'Engineered an end-to-end computer vision attendance management system. Utilized InsightFace and OpenCV for instantaneous facial embedding matching against an encrypted SQLite database. Features administrative oversight dashboards, automated attendance percentage calculations, live camera feed streams, and exportable CSV/PDF analytical reports.',
+       description: 'A real-time facial recognition attendance system using OpenCV, Flask, and SQLite.',
+       longDescription: 'Built a real-time attendance system using OpenCV-based facial detection and recognition, integrated with a Flask backend and SQLite database.',
       image: '/images/smart_face_attendance.jpg',
-      techStack: ['Python', 'Flask', 'OpenCV', 'InsightFace', 'SQLite', 'HTML5/CSS3', 'JavaScript'],
+       techStack: ['Python', 'Flask', 'OpenCV', 'SQLite'],
       features: [
-        'Biometric 128D facial feature vector matching',
-        'Automated real-time camera stream processing',
-        'Secure multi-role administrative & student dashboard',
-        'Attendance analytics charts & automated PDF generation'
+         'OpenCV-based facial detection and recognition',
+         'Flask backend integration',
+         'SQLite attendance data storage'
       ],
       githubUrl: 'https://github.com/Priyankagnanam/Priyanka-Portfolio'
     },
@@ -142,34 +139,18 @@ export const PORTFOLIO_DATA = {
       id: 'college-connect',
       title: 'College Connect – Student Management Portal',
       category: 'Web & Cloud Systems',
-      description: 'A responsive full-stack academic portal streamlining student-faculty communication, notice delivery, and real-time academic record tracking.',
-      longDescription: 'Created a centralized web application for college campuses to eliminate communication gaps between department faculty and students. Powered by Firebase Authentication for role-based security (Student/Faculty/Admin) and Firebase Firestore for instant push notifications and timetable synchronization.',
+       description: 'A full-stack student management portal built with HTML, CSS, JavaScript, and Firebase.',
+       longDescription: 'Built a centralized web portal to support academic management and communication between students and administration, with Firebase Authentication and Firestore for secure login and real-time data updates.',
       image: '/images/college_connect_portal.jpg',
-      techStack: ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'Firebase Auth', 'Firestore', 'Tailwind CSS'],
+       techStack: ['HTML5', 'CSS3', 'JavaScript', 'Firebase Auth', 'Firestore'],
       features: [
-        'Firebase OAuth & Email authentication',
-        'Real-time Firestore academic announcement feed',
-        'Interactive timetable viewer & assignment submitter',
-        'Mobile-first responsive glassmorphism user interface'
+         'Firebase Authentication for secure login',
+         'Real-time Firestore data updates',
+         'Attendance, marks, and study materials management',
+         'Leave requests and announcements'
       ],
       githubUrl: 'https://github.com/Priyankagnanam/Priyanka-Portfolio'
     },
-    {
-      id: 'userpro-dashboard',
-      title: 'UserPro – User Profile Dashboard',
-      category: 'Web & Cloud Systems',
-      description: 'A sleek, security-focused profile management dashboard with real-time Firestore database synchronization and user preference controls.',
-      longDescription: 'Built a modular, highly accessible profile management platform designed for SaaS applications. Incorporates dynamic form state validation, real-time avatar upload previews, Firestore security rules enforcement, and session activity tracking.',
-      image: '/images/userpro_dashboard.jpg',
-      techStack: ['HTML5', 'CSS3', 'JavaScript', 'Firebase Firestore', 'Cloud Storage'],
-      features: [
-        'Instant live data synchronization with Google Firestore',
-        'Granular user privacy settings & security logs',
-        'Dynamic avatar upload & crop preview',
-        'Zero-latency optimistic UI updates'
-      ],
-      githubUrl: 'https://github.com/Priyankagnanam/Priyanka-Portfolio'
-    }
   ] as Project[],
 
   certifications: [
@@ -222,38 +203,33 @@ export const PORTFOLIO_DATA = {
     {
       name: 'Programming Languages',
       skills: [
-        { name: 'Python', level: 92, icon: 'SiPython', color: 'from-blue-500 to-yellow-400' },
-        { name: 'Java', level: 88, icon: 'FaJava', color: 'from-orange-500 to-red-500' },
-        { name: 'SQL', level: 85, icon: 'SiMysql', color: 'from-blue-600 to-cyan-500' },
-        { name: 'JavaScript (ES6+)', level: 85, icon: 'SiJavascript', color: 'from-yellow-400 to-amber-500' },
-        { name: 'C / C++', level: 80, icon: 'SiCplusplus', color: 'from-blue-700 to-indigo-600' },
+         { name: 'Python', icon: 'SiPython', color: 'from-blue-500 to-yellow-400' },
+         { name: 'Java', icon: 'FaJava', color: 'from-orange-500 to-red-500' },
+         { name: 'SQL', icon: 'SiMysql', color: 'from-blue-600 to-cyan-500' },
+         { name: 'JavaScript', icon: 'SiJavascript', color: 'from-yellow-400 to-amber-500' },
       ]
     },
     {
       name: 'Web & Frameworks',
       skills: [
-        { name: 'React & Vite', level: 88, icon: 'SiReact', color: 'from-cyan-400 to-blue-500' },
-        { name: 'Tailwind CSS & Motion', level: 90, icon: 'SiTailwindcss', color: 'from-teal-400 to-cyan-500' },
-        { name: 'Flask (Python)', level: 82, icon: 'SiFlask', color: 'from-slate-400 to-slate-200' },
-        { name: 'HTML5 & CSS3', level: 95, icon: 'SiHtml5', color: 'from-orange-500 to-amber-600' },
+         { name: 'HTML5 & CSS3', icon: 'SiHtml5', color: 'from-orange-500 to-amber-600' },
       ]
     },
     {
       name: 'Databases & Cloud',
       skills: [
-        { name: 'MySQL', level: 86, icon: 'SiMysql', color: 'from-blue-500 to-indigo-600' },
-        { name: 'Firebase Firestore', level: 88, icon: 'SiFirebase', color: 'from-amber-400 to-orange-500' },
-        { name: 'MongoDB', level: 80, icon: 'SiMongodb', color: 'from-emerald-500 to-green-600' },
-        { name: 'SQLite', level: 85, icon: 'SiSqlite', color: 'from-sky-400 to-blue-600' },
+         { name: 'MySQL', icon: 'SiMysql', color: 'from-blue-500 to-indigo-600' },
+         { name: 'Firebase Firestore', icon: 'SiFirebase', color: 'from-amber-400 to-orange-500' },
+         { name: 'MongoDB', icon: 'SiMongodb', color: 'from-emerald-500 to-green-600' },
       ]
     },
     {
       name: 'AI, Data & Security Tools',
       skills: [
-        { name: 'OpenCV & InsightFace', level: 85, icon: 'SiOpencv', color: 'from-green-400 to-emerald-600' },
-        { name: 'Power BI & Excel', level: 84, icon: 'SiPowerbi', color: 'from-yellow-500 to-amber-600' },
-        { name: 'Git & GitHub', level: 90, icon: 'SiGit', color: 'from-orange-600 to-red-600' },
-        { name: 'Linux (Ubuntu)', level: 85, icon: 'SiLinux', color: 'from-amber-500 to-yellow-600' },
+         { name: 'OpenCV', icon: 'SiOpencv', color: 'from-green-400 to-emerald-600' },
+         { name: 'Power BI & Excel', icon: 'SiPowerbi', color: 'from-yellow-500 to-amber-600' },
+         { name: 'Git & GitHub', icon: 'SiGit', color: 'from-orange-600 to-red-600' },
+         { name: 'Linux (Ubuntu)', icon: 'SiLinux', color: 'from-amber-500 to-yellow-600' },
       ]
     }
   ]
