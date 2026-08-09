@@ -20,18 +20,25 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Priyanka G | Data Analyst & UI/UX Enthusiast",
+  title: "Priyanka G | B.Tech IT Scholar | US MS CS Applicant 2027",
   description:
-    "Portfolio of Priyanka G — a B.Tech IT student passionate about data analysis, UI/UX design, and cyber security. Explore projects, skills, and experience.",
+    "Portfolio of Priyanka G — B.Tech Information Technology student at Government College of Engineering, Erode. Specializing in AI Computer Vision, Cybersecurity, and Cloud Full-Stack Systems. Targeting US MS CS programs (Fall 2027).",
   keywords: [
     "Priyanka G",
-    "Data Analyst",
-    "UI/UX Designer",
-    "Cyber Security",
+    "Priyanka Gnanam",
+    "B.Tech IT",
+    "US MS CS Applicant",
+    "AI Computer Vision",
+    "Face Recognition",
+    "Cybersecurity",
+    "Full-Stack Developer",
     "Portfolio",
     "React",
     "Next.js",
-    "Tailwind CSS",
+    "NPTEL Elite",
+    "Government College of Engineering Erode",
+    "Anna University",
+    "MS Computer Science USA",
   ],
   authors: [{ name: "Priyanka G" }],
   creator: "Priyanka G",
@@ -39,15 +46,15 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     siteName: "Priyanka G Portfolio",
-    title: "Priyanka G | Data Analyst & UI/UX Enthusiast",
+    title: "Priyanka G | B.Tech IT Scholar | US MS CS Applicant 2027",
     description:
-      "Portfolio of Priyanka G — B.Tech IT student passionate about data analysis, UI/UX design, and cyber security.",
+      "Portfolio of Priyanka G — B.Tech IT student specializing in AI, Computer Vision, Cybersecurity and Cloud Systems. Aspiring US MS CS student.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Priyanka G | Data Analyst & UI/UX Enthusiast",
+    title: "Priyanka G | B.Tech IT Scholar | US MS CS Applicant 2027",
     description:
-      "Portfolio of Priyanka G — B.Tech IT student passionate about data analysis, UI/UX design, and cyber security.",
+      "Portfolio of Priyanka G — AI Engineer, Full-Stack Developer, NPTEL Elite Scholar. Targeting US MS CS Fall 2027.",
   },
   robots: {
     index: true,

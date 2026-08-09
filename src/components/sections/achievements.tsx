@@ -1,16 +1,16 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { GraduationCap, Award, Briefcase, FolderGit, BookOpen } from "lucide-react"
+import { Trophy, Sparkles } from "lucide-react"
 import Reveal from "@/components/effects/reveal"
 import { achievements } from "@/data/personal"
 
-const iconMap: Record<string, React.ReactNode> = {
-  "graduation-cap": <GraduationCap className="h-6 w-6" />,
-  award: <Award className="h-6 w-6" />,
-  briefcase: <Briefcase className="h-6 w-6" />,
-  "folder-git": <FolderGit className="h-6 w-6" />,
-  "book-open": <BookOpen className="h-6 w-6" />,
+const iconMap: Record<string, string> = {
+  "graduation-cap": "🎓",
+  "award": "⭐",
+  "briefcase": "💼",
+  "folder-git": "🚀",
+  "book-open": "📚",
 }
 
 export default function Achievements() {
@@ -20,31 +20,42 @@ export default function Achievements() {
         <Reveal>
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-sm text-primary font-medium mb-4">
-              Achievements
+              Highlights
             </span>
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              My <span className="text-gradient">Milestones</span>
+              Key <span className="text-gradient">Achievements</span>
             </h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto" />
+            <p className="text-muted-foreground max-w-xl mx-auto text-sm md:text-base">
+              Academic milestones, industry recognitions, and personal wins that define my journey toward US MS programs.
+            </p>
+            <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto mt-4" />
           </div>
         </Reveal>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
           {achievements.map((item, index) => (
-            <Reveal key={item.title} delay={index * 0.1} direction="up">
+            <Reveal key={item.title} delay={index * 0.12} direction="up">
               <motion.div
-                className="p-6 rounded-2xl border border-border/50 bg-gradient-to-br from-card/50 to-card/30 backdrop-blur-sm hover:border-primary/20 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 text-center group"
                 whileHover={{ y: -5, scale: 1.02 }}
+                className="group"
               >
-                <div className="h-14 w-14 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mx-auto mb-4 group-hover:from-primary/30 group-hover:to-secondary/30 transition-all duration-300">
-                  <span className="text-primary group-hover:scale-110 transition-transform duration-300">
-                    {iconMap[item.icon] || <Award className="h-6 w-6" />}
-                  </span>
+                <div className="h-full bg-card/50 border border-border/50 rounded-2xl p-6 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10 transition-all duration-400 backdrop-blur-sm">
+                  {/* Icon + Stat */}
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-primary/15 to-secondary/15 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                      {iconMap[item.icon] || "✨"}
+                    </div>
+                    <div className="text-right">
+                      <div className="text-2xl font-bold text-gradient leading-none">{item.stat}</div>
+                      <div className="text-xs text-muted-foreground">{item.statLabel}</div>
+                    </div>
+                  </div>
+
+                  <h3 className="font-bold text-foreground mb-2 group-hover:text-gradient transition-all duration-300 text-sm">
+                    {item.title}
+                  </h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{item.description}</p>
                 </div>
-                <h3 className="font-semibold text-sm mb-2">{item.title}</h3>
-                <p className="text-xs text-muted-foreground leading-relaxed">
-                  {item.description}
-                </p>
               </motion.div>
             </Reveal>
           ))}

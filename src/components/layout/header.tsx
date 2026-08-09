@@ -53,6 +53,13 @@ export default function Header() {
           <div className="ml-2">
             <ThemeToggle />
           </div>
+          <a
+            href="/resume.pdf"
+            download="Priyanka_G_Resume.pdf"
+            className="ml-2 px-4 py-2 text-sm font-semibold rounded-xl bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:opacity-90 transition-all duration-200 shadow-sm shadow-primary/20"
+          >
+            Resume ↓
+          </a>
         </nav>
 
         <div className="flex items-center gap-2 md:hidden">

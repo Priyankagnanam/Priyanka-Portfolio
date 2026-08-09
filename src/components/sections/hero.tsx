@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
-import { ArrowDown, Download, Eye, Mail } from "lucide-react"
+import { ArrowDown, Download, Eye, Mail, GraduationCap, MapPin, Star } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { personalInfo } from "@/data/personal"
 
@@ -21,6 +21,13 @@ function LinkedinIcon({ className }: { className?: string }) {
     </svg>
   )
 }
+
+const statsData = [
+  { value: "8.39", label: "CGPA", sub: "B.Tech IT" },
+  { value: "93%", label: "NPTEL HCI", sub: "Elite Score" },
+  { value: "2", label: "Internships", sub: "Industry" },
+  { value: "3+", label: "Projects", sub: "AI & Cloud" },
+]
 
 export default function Hero() {
   const [textIndex, setTextIndex] = useState(0)
@@ -84,46 +91,83 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen flex items-center justify-center section-padding overflow-hidden"
     >
+      {/* Animated gradient orbs */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <motion.div
+          className="absolute top-1/4 -left-32 w-96 h-96 rounded-full bg-primary/10 blur-3xl"
+          animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.6, 0.3] }}
+          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+        />
+        <motion.div
+          className="absolute bottom-1/4 -right-32 w-96 h-96 rounded-full bg-secondary/10 blur-3xl"
+          animate={{ scale: [1.2, 1, 1.2], opacity: [0.4, 0.7, 0.4] }}
+          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+        />
+        <motion.div
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full bg-accent/5 blur-3xl"
+          animate={{ scale: [1, 1.4, 1], opacity: [0.2, 0.5, 0.2] }}
+          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+        />
+      </div>
+
       <div className="container-custom relative z-10">
         <motion.div
-          className="max-w-4xl mx-auto text-center"
+          className="max-w-5xl mx-auto text-center"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
-          <motion.div variants={itemVariants} className="mb-4">
-            <span className="inline-block px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-sm text-primary font-medium">
-              Welcome to my portfolio
-            </span>
+          {/* MS Applicant Badge */}
+          <motion.div variants={itemVariants} className="mb-6">
+            <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-primary/30 bg-primary/10 backdrop-blur-sm">
+              <GraduationCap className="h-4 w-4 text-primary" />
+              <span className="text-sm text-primary font-semibold tracking-wide">
+                🎓 US MS CS Applicant — Fall 2027 Intake
+              </span>
+              <Star className="h-3.5 w-3.5 text-yellow-400 fill-yellow-400" />
+            </div>
           </motion.div>
 
+          {/* Main Name */}
           <motion.h1
             variants={itemVariants}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight"
+            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-5 leading-tight"
           >
-            <span className="text-3xl md:text-4xl lg:text-5xl block mb-2 text-muted-foreground font-normal">
-              Hi <span className="inline-block animate-bounce">👋</span>
+            <span className="text-2xl md:text-3xl lg:text-4xl block mb-3 text-muted-foreground font-normal">
+              Hi there <span className="inline-block animate-bounce">👋</span>
             </span>
             <span className="text-gradient">Priyanka G</span>
           </motion.h1>
 
+          {/* Location */}
+          <motion.div variants={itemVariants} className="flex items-center justify-center gap-1.5 mb-4 text-muted-foreground text-sm">
+            <MapPin className="h-3.5 w-3.5" />
+            <span>Dharmapuri, Tamil Nadu, India &nbsp;•&nbsp; GCE Erode, Anna University</span>
+          </motion.div>
+
+          {/* Typing animation */}
           <motion.div variants={itemVariants} className="mb-8">
             <div className="flex items-center justify-center gap-2 text-xl md:text-2xl text-muted-foreground">
-              <span className="text-primary font-medium">{displayText}</span>
-              <span className="w-[3px] h-7 bg-primary animate-pulse" />
+              <span className="text-primary font-semibold">{displayText}</span>
+              <span className="w-[3px] h-7 bg-primary animate-pulse rounded-full" />
             </div>
           </motion.div>
 
+          {/* Tagline */}
           <motion.p
             variants={itemVariants}
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
+            className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
           >
-            {personalInfo.tagline}
+            Building intelligent systems at the intersection of{" "}
+            <span className="text-primary font-medium">AI Computer Vision</span>,{" "}
+            <span className="text-secondary font-medium">Cloud Engineering</span> &{" "}
+            <span className="text-accent font-medium">Cybersecurity</span> — with an eye on US graduate research.
           </motion.p>
 
+          {/* CTA Buttons */}
           <motion.div
             variants={itemVariants}
-            className="flex flex-wrap items-center justify-center gap-4 mb-12"
+            className="flex flex-wrap items-center justify-center gap-4 mb-14"
           >
             <Button
               size="lg"
@@ -157,9 +201,10 @@ export default function Hero() {
             </Button>
           </motion.div>
 
+          {/* Social Links */}
           <motion.div
             variants={itemVariants}
-            className="flex items-center justify-center gap-4"
+            className="flex items-center justify-center gap-4 mb-16"
           >
             <motion.a
               href={personalInfo.github}
@@ -189,6 +234,27 @@ export default function Hero() {
             >
               <Mail className="h-5 w-5" />
             </motion.a>
+          </motion.div>
+
+          {/* Stats Bar */}
+          <motion.div
+            variants={itemVariants}
+            className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto"
+          >
+            {statsData.map((stat, i) => (
+              <motion.div
+                key={stat.label}
+                className="bg-card/40 border border-border/60 rounded-2xl px-4 py-5 backdrop-blur-sm hover:border-primary/30 transition-all duration-300"
+                whileHover={{ y: -3, scale: 1.03 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.8 + i * 0.1, duration: 0.5 }}
+              >
+                <div className="text-2xl md:text-3xl font-bold text-gradient leading-none mb-1">{stat.value}</div>
+                <div className="text-xs font-semibold text-primary uppercase tracking-wider">{stat.label}</div>
+                <div className="text-xs text-muted-foreground mt-0.5">{stat.sub}</div>
+              </motion.div>
+            ))}
           </motion.div>
         </motion.div>
       </div>
