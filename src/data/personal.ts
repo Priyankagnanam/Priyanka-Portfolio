@@ -1,17 +1,15 @@
 export const personalInfo = {
   name: "Priyanka G",
   role: "B.Tech Information Technology Student",
-  tagline: "Aspiring MS CS Student | AI & Computer Vision Researcher | Cybersecurity Enthusiast",
+  tagline: "AI & Computer Vision Researcher | Full-Stack Developer | Cybersecurity Enthusiast",
   email: "gpriyanka17052006@gmail.com",
   phone: "+91 82487 37651",
   location: "Dharmapuri, Tamil Nadu, India",
   github: "https://github.com/Priyankagnanam",
   linkedin: "https://www.linkedin.com/in/priyanka-gnanam",
   resumeUrl: "/resume.pdf",
-  targetDegree: "MS Computer Science — US Universities (Fall 2027)",
   typingTexts: [
     "AI & Computer Vision Engineer",
-    "US MS CS Applicant 🎓",
     "Full-Stack Developer",
     "Cybersecurity Enthusiast",
     "NPTEL 93% HCI Scholar",
@@ -20,11 +18,11 @@ export const personalInfo = {
 
 export const aboutContent = {
   intro:
-    "I am a B.Tech Information Technology student at Government College of Engineering, Erode (Anna University) maintaining an 8.39 CGPA. My research interests span Biometric Computer Vision, Intelligent Systems, and Secure Cloud Architectures — fields I am passionate about pursuing at the graduate level in the United States.",
+    "I am a B.Tech Information Technology student at Government College of Engineering, Erode (Anna University) maintaining an 8.39 CGPA. My interests span Biometric Computer Vision, Intelligent Systems, and Secure Cloud Architectures.",
   passion:
-    "From building real-time facial recognition attendance systems with InsightFace & OpenCV, to designing cloud-connected student portals using Firebase — I thrive where AI meets practical engineering. I am now channeling this hands-on experience toward MS programs in Computer Science at US universities (Fall 2027 intake).",
+    "From building real-time facial recognition attendance systems with InsightFace & OpenCV, to designing cloud-connected student portals using Firebase — I thrive where AI meets practical engineering.",
   goals:
-    "My goal is to contribute to world-class AI/security research through a US MS program, and ultimately engineer scalable, intelligent systems that solve real societal problems — inspired by India's growing innovation ecosystem.",
+    "My goal is to engineer scalable, intelligent systems that solve real societal problems — inspired by India's growing innovation ecosystem.",
   details: [
     {
       label: "Academic Standing",
@@ -43,8 +41,8 @@ export const aboutContent = {
       value: "Industry intern at Xplore IT Corp — conducted vulnerability assessments, threat modelling & pen-testing.",
     },
     {
-      label: "MS Research Focus",
-      value: "Targeting US MS CS programs (Fall 2027) in AI/ML, Biometrics & Secure Systems.",
+      label: "Research Focus",
+      value: "Exploring AI/ML, Biometrics, and Secure Systems.",
     },
   ],
 }
@@ -281,8 +279,8 @@ export const achievements = [
   },
   {
     icon: "book-open",
-    title: "US MS CS Aspirant",
-    description: "Actively preparing for MS in Computer Science applications to US universities (Fall 2027 intake).",
+    title: "Continuous Learner",
+    description: "Building depth through coursework, certifications, internships, and independent projects.",
     stat: "Fall",
     statLabel: "2027 Target",
   },

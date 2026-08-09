@@ -10,7 +10,7 @@ const highlights = [
   { label: "CGPA", value: "8.39 / 10.0", icon: "⭐" },
   { label: "NPTEL HCI", value: "93% Elite", icon: "🏆" },
   { label: "Internships", value: "2 Industry", icon: "💼" },
-  { label: "Target", value: "US MS CS Fall 2027", icon: "🎯" },
+  { label: "Focus", value: "AI, Cloud & Security", icon: "🎯" },
 ]
 
 export default function ResumeSection() {
@@ -37,7 +37,7 @@ export default function ResumeSection() {
               </h2>
               <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto mb-6" />
               <p className="text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                A comprehensive academic CV tailored for <span className="text-primary font-medium">US MS Computer Science</span> applications — featuring AI projects, NPTEL certifications, and industry internship experience.
+                A comprehensive academic CV featuring AI projects, NPTEL certifications, and industry internship experience.
               </p>
             </div>
 
@@ -62,7 +62,7 @@ export default function ResumeSection() {
                     <h3 className="text-xl font-bold">Priyanka G — Academic CV</h3>
                   </div>
                   <p className="text-muted-foreground text-sm mb-6">
-                    B.Tech IT · GCE Erode (Anna University) · US MS CS Applicant 2027
+                    B.Tech IT · GCE Erode (Anna University)
                   </p>
 
                   {/* Highlights grid */}

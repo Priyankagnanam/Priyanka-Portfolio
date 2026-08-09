@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { motion } from "framer-motion"
 
 interface Shape {
@@ -23,10 +23,7 @@ const colors = [
 ]
 
 export default function FloatingShapes() {
-  const [shapes, setShapes] = useState<Shape[]>([])
-
-  useEffect(() => {
-    const generated: Shape[] = Array.from({ length: 8 }, (_, i) => ({
+  const [shapes] = useState<Shape[]>(() => Array.from({ length: 8 }, (_, i) => ({
       id: i,
       type: (["circle", "square", "triangle"] as const)[
         Math.floor(Math.random() * 3)
@@ -37,9 +34,7 @@ export default function FloatingShapes() {
       color: colors[Math.floor(Math.random() * colors.length)],
       duration: Math.random() * 10 + 15,
       delay: Math.random() * 5,
-    }))
-    setShapes(generated)
-  }, [])
+    })))
 
   return (
     <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">

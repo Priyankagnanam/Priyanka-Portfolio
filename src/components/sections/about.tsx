@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Code2, Shield, Brain, Sparkles, GraduationCap, Zap, Target } from "lucide-react"
+import { Code2, Shield, Brain, GraduationCap, Zap } from "lucide-react"
 import Reveal from "@/components/effects/reveal"
 import { aboutContent, personalInfo } from "@/data/personal"
 
@@ -10,7 +10,6 @@ const iconMap: Record<string, React.ReactNode> = {
   "Computer Vision & AI": <Brain className="h-5 w-5" />,
   "Cloud & Full-Stack": <Code2 className="h-5 w-5" />,
   "Cybersecurity": <Shield className="h-5 w-5" />,
-  "MS Research Focus": <Target className="h-5 w-5" />,
 }
 
 export default function About() {
@@ -40,7 +39,7 @@ export default function About() {
                   </div>
                   <div>
                     <div className="font-bold text-foreground">Priyanka G</div>
-                    <div className="text-xs text-primary font-medium">{personalInfo.targetDegree}</div>
+                    <div className="text-xs text-primary font-medium">{personalInfo.role}</div>
                   </div>
                   <div className="ml-auto flex items-center gap-1.5 text-xs text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/20">
                     <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
@@ -65,7 +64,7 @@ export default function About() {
                   { label: "Location", value: "Tamil Nadu, India", icon: "📍" },
                   { label: "Degree", value: "B.Tech IT (2027)", icon: "🎓" },
                   { label: "CGPA", value: "8.39 / 10.0", icon: "⭐" },
-                  { label: "Target", value: "US MS CS Fall 2027", icon: "🎯" },
+                  { label: "Focus", value: "AI, Cloud & Security", icon: "🎯" },
                 ].map((info) => (
                   <div key={info.label} className="flex items-center gap-2.5 p-3 rounded-xl bg-card/50 border border-border/50">
                     <span className="text-lg">{info.icon}</span>

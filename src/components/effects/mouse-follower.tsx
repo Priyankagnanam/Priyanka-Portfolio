@@ -5,17 +5,12 @@ import { motion, useMotionValue, useSpring } from "framer-motion"
 
 export default function MouseFollower() {
   const [isVisible, setIsVisible] = useState(false)
-  const [isMounted, setIsMounted] = useState(false)
   const cursorX = useMotionValue(-100)
   const cursorY = useMotionValue(-100)
 
   const springConfig = { damping: 25, stiffness: 200 }
   const cursorXSpring = useSpring(cursorX, springConfig)
   const cursorYSpring = useSpring(cursorY, springConfig)
-
-  useEffect(() => {
-    setIsMounted(true)
-  }, [])
 
   useEffect(() => {
     const moveCursor = (e: MouseEvent) => {
@@ -36,8 +31,6 @@ export default function MouseFollower() {
       document.removeEventListener("mouseleave", handleMouseLeave)
     }
   }, [cursorX, cursorY])
-
-  if (!isMounted) return null
 
   return (
     <motion.div

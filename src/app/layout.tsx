@@ -20,14 +20,13 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Priyanka G | B.Tech IT Scholar | US MS CS Applicant 2027",
+  title: "Priyanka G | B.Tech IT Student and AI Developer",
   description:
-    "Portfolio of Priyanka G — B.Tech Information Technology student at Government College of Engineering, Erode. Specializing in AI Computer Vision, Cybersecurity, and Cloud Full-Stack Systems. Targeting US MS CS programs (Fall 2027).",
+    "Portfolio of Priyanka G — B.Tech Information Technology student at Government College of Engineering, Erode. Specializing in AI Computer Vision, Cybersecurity, and Cloud Full-Stack Systems.",
   keywords: [
     "Priyanka G",
     "Priyanka Gnanam",
     "B.Tech IT",
-    "US MS CS Applicant",
     "AI Computer Vision",
     "Face Recognition",
     "Cybersecurity",
@@ -38,7 +37,7 @@ export const metadata: Metadata = {
     "NPTEL Elite",
     "Government College of Engineering Erode",
     "Anna University",
-    "MS Computer Science USA",
+    "Software Engineering",
   ],
   authors: [{ name: "Priyanka G" }],
   creator: "Priyanka G",
@@ -46,15 +45,15 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     siteName: "Priyanka G Portfolio",
-    title: "Priyanka G | B.Tech IT Scholar | US MS CS Applicant 2027",
-    description:
-      "Portfolio of Priyanka G — B.Tech IT student specializing in AI, Computer Vision, Cybersecurity and Cloud Systems. Aspiring US MS CS student.",
+      title: "Priyanka G | B.Tech IT Student and AI Developer",
+      description:
+        "Portfolio of Priyanka G — B.Tech IT student specializing in AI, Computer Vision, Cybersecurity and Cloud Systems.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Priyanka G | B.Tech IT Scholar | US MS CS Applicant 2027",
-    description:
-      "Portfolio of Priyanka G — AI Engineer, Full-Stack Developer, NPTEL Elite Scholar. Targeting US MS CS Fall 2027.",
+      title: "Priyanka G | B.Tech IT Student and AI Developer",
+      description:
+        "Portfolio of Priyanka G — AI Engineer, Full-Stack Developer, and NPTEL Elite Scholar.",
   },
   robots: {
     index: true,

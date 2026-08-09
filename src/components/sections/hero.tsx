@@ -54,8 +54,10 @@ export default function Hero() {
     } else if (!isDeleting && charIndex === currentText.length) {
       timeout = setTimeout(() => setIsDeleting(true), 2000)
     } else if (isDeleting && charIndex === 0) {
-      setIsDeleting(false)
-      setTextIndex((prev) => (prev + 1) % texts.length)
+      timeout = setTimeout(() => {
+        setIsDeleting(false)
+        setTextIndex((prev) => (prev + 1) % texts.length)
+      }, 0)
     }
 
     return () => clearTimeout(timeout)
@@ -117,12 +119,12 @@ export default function Hero() {
           initial="hidden"
           animate="visible"
         >
-          {/* MS Applicant Badge */}
+          {/* Profile Badge */}
           <motion.div variants={itemVariants} className="mb-6">
             <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-primary/30 bg-primary/10 backdrop-blur-sm">
               <GraduationCap className="h-4 w-4 text-primary" />
               <span className="text-sm text-primary font-semibold tracking-wide">
-                🎓 US MS CS Applicant — Fall 2027 Intake
+                🎓 AI & Full-Stack Developer
               </span>
               <Star className="h-3.5 w-3.5 text-yellow-400 fill-yellow-400" />
             </div>
@@ -161,7 +163,7 @@ export default function Hero() {
             Building intelligent systems at the intersection of{" "}
             <span className="text-primary font-medium">AI Computer Vision</span>,{" "}
             <span className="text-secondary font-medium">Cloud Engineering</span> &{" "}
-            <span className="text-accent font-medium">Cybersecurity</span> — with an eye on US graduate research.
+            <span className="text-accent font-medium">Cybersecurity</span>.
           </motion.p>
 
           {/* CTA Buttons */}

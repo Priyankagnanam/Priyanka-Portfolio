@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Award, Star, ExternalLink, Calendar, BookOpen } from "lucide-react"
+import { Award, Star, Calendar, BookOpen } from "lucide-react"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Reveal from "@/components/effects/reveal"
@@ -20,7 +20,7 @@ export default function Certifications() {
               My <span className="text-gradient">Credentials</span>
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto text-sm md:text-base">
-              NPTEL Elite distinctions, industry certifications, and continuous learning achievements that strengthen my academic profile for US graduate programs.
+              NPTEL Elite distinctions, industry certifications, and continuous learning achievements.
             </p>
             <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto mt-4" />
           </div>
@@ -94,7 +94,7 @@ export default function Certifications() {
               <div>
                 <h3 className="font-bold text-foreground mb-1">NPTEL Elite Distinction — IIT Faculty Certified</h3>
                 <p className="text-muted-foreground text-sm">
-                  NPTEL Elite certifications are awarded by IIT faculty for top-decile performance in nationally conducted online courses — recognized by Indian universities and US graduate admissions committees as a mark of academic excellence.
+                  NPTEL Elite certifications are awarded by IIT faculty for top-decile performance in nationally conducted online courses.
                 </p>
               </div>
             </div>

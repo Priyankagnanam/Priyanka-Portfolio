@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaGraduationCap, FaDownload, FaBars, FaTimes, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaDownload, FaBars, FaTimes } from 'react-icons/fa';
 import confetti from 'canvas-confetti';
 import { PORTFOLIO_DATA } from '../data/portfolioData';
 
@@ -36,7 +36,6 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
 
   const navLinks = [
     { name: 'About', href: '#about' },
-    { name: 'US MS Vision', href: '#ms-vision' },
     { name: 'Education', href: '#education' },
     { name: 'Internships', href: '#internships' },
     { name: 'Projects', href: '#projects' },
@@ -68,7 +67,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
             </span>
             <span className="hidden sm:flex items-center gap-1.5 text-xs text-slate-400 font-mono">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              US MS Applicant
+              Available for opportunities
             </span>
           </div>
         </a>

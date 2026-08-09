@@ -1,7 +1,6 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Trophy, Sparkles } from "lucide-react"
 import Reveal from "@/components/effects/reveal"
 import { achievements } from "@/data/personal"
 
@@ -26,7 +25,7 @@ export default function Achievements() {
               Key <span className="text-gradient">Achievements</span>
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto text-sm md:text-base">
-              Academic milestones, industry recognitions, and personal wins that define my journey toward US MS programs.
+              Academic milestones, industry recognitions, and personal wins from my engineering journey.
             </p>
             <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto mt-4" />
           </div>

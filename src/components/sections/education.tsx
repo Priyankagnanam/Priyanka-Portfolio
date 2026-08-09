@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { GraduationCap, Calendar, MapPin, BookOpen, Target } from "lucide-react"
+import { GraduationCap, Calendar, MapPin, BookOpen } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Reveal from "@/components/effects/reveal"
@@ -20,7 +20,7 @@ export default function Education() {
               Academic <span className="text-gradient">Journey</span>
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto text-sm md:text-base">
-              Building a strong academic foundation in Computer Science and Information Technology — targeted at US MS programs.
+              Building a strong academic foundation in Information Technology and software engineering.
             </p>
             <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto mt-4" />
           </div>
@@ -101,39 +101,6 @@ export default function Education() {
             </Reveal>
           ))}
 
-          {/* US MS Target Card */}
-          <Reveal delay={0.5} direction="up">
-            <motion.div whileHover={{ y: -4 }}>
-              <Card className="border-primary/30 bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5 overflow-hidden">
-                <div className="h-1.5 bg-gradient-to-r from-primary via-secondary to-accent" />
-                <CardContent className="p-6 md:p-8">
-                  <div className="flex flex-col md:flex-row md:items-center gap-6">
-                    <div className="flex-shrink-0">
-                      <div className="h-16 w-16 rounded-2xl bg-gradient-to-br from-primary/30 to-secondary/30 flex items-center justify-center">
-                        <Target className="h-8 w-8 text-primary" />
-                      </div>
-                    </div>
-                    <div className="flex-1">
-                      <div className="flex flex-wrap items-center gap-3 mb-2">
-                        <h3 className="text-xl md:text-2xl font-bold text-gradient">
-                          Target: MS in Computer Science — USA
-                        </h3>
-                        <Badge className="text-xs bg-primary/20 text-primary border-primary/30">
-                          🎯 Fall 2027
-                        </Badge>
-                      </div>
-                      <p className="text-primary font-medium text-sm mb-3">
-                        US Universities (Top CS Programs)
-                      </p>
-                      <p className="text-muted-foreground text-sm leading-relaxed">
-                        Planning to pursue MS CS at leading US universities with research focus on Artificial Intelligence, Biometric Computer Vision, and Network Security Systems. Currently building a strong profile through NPTEL distinctions, AI internships, and research-grade project development.
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
-          </Reveal>
         </div>
       </div>
     </section>

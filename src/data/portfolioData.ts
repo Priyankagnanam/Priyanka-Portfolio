@@ -44,16 +44,16 @@ export interface Education {
 export const PORTFOLIO_DATA = {
   personal: {
     name: 'Priyanka G',
-    shortTitle: 'B.Tech IT Scholar | US MS CS Applicant',
+    shortTitle: 'B.Tech IT Scholar | AI & Full-Stack Developer',
     headline: 'Engineering Intelligent Systems, Computer Vision & Secure Web Applications',
-    bio: 'B.Tech student in Information Technology at Government College of Engineering, Erode (Anna University) with an 8.39 CGPA. Passionate about pursuing a Master of Science (MS) in Computer Science in the United States, focusing on Artificial Intelligence, Biometric Computer Vision, and Network Cybersecurity.',
+    bio: 'B.Tech student in Information Technology at Government College of Engineering, Erode (Anna University) with an 8.39 CGPA. Focused on Artificial Intelligence, Biometric Computer Vision, and Network Cybersecurity.',
     email: 'gpriyanka17052006@gmail.com',
     phone: '+91 8248737651',
     location: 'Dharmapuri, Tamil Nadu, India',
     github: 'https://github.com/Priyankagnanam',
     linkedin: 'https://linkedin.com/in/priyanka-gnanam',
     resumePdf: '/resume.pdf',
-    targetDegree: 'Master of Science (MS) in Computer Science / IT (USA Fall 2027)',
+    targetDegree: 'B.Tech Information Technology',
   },
 
   stats: [
@@ -63,25 +63,6 @@ export const PORTFOLIO_DATA = {
     { label: 'Production Projects', value: '03+', sub: 'AI Biometrics & Full-Stack' },
   ],
 
-  msStatement: {
-    title: 'Academic Vision & US MS Aspirations',
-    subtitle: 'Bridging Theoretical Computer Science with Real-World Intelligent Infrastructure',
-    content: `As an aspiring MS candidate in Computer Science for US universities, my academic trajectory centers on building resilient software architectures, high-performance biometric vision models, and secure cloud ecosystems. Through coursework in DSA, DBMS, HCI, and hands-on research internships, I have cultivated both quantitative analytical skills and practical implementation capabilities. I aim to contribute to cutting-edge research in AI-driven security systems while gaining world-class graduate education in the US.`,
-    pillars: [
-      {
-        title: 'Biometric Computer Vision & AI',
-        desc: 'Developing deep feature vector embeddings with InsightFace & OpenCV for high-accuracy real-time recognition.'
-      },
-      {
-        title: 'Secure Full-Stack Architectures',
-        desc: 'Structuring cloud-connected web applications with Firebase Firestore, strict authentication, and scalable database schemas.'
-      },
-      {
-        title: 'Cyber Threat Analysis',
-        desc: 'Evaluating vulnerability points, conducting risk mitigation, and implementing cryptographic standards for enterprise networks.'
-      }
-    ]
-  },
 
   education: [
     {
